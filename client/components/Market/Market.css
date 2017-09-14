@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  font-size: 0.75rem;
+  padding: 10px 5px;
+}
+
+.imageLink {
+  display: block;
+}
+
+.image {
+  width: 30px;
+  border-radius: 5px;
+}
+
+.title {
+  padding: 10px 0 5px;
+}
+
+.stat {
+  padding: 5px 0;
+  height: 1rem;
+}
+
+.statNumber {
+  &.isIncrease {
+    color: #2ecc71;
+  }
+
+  &.isDecrease {
+    color: #df6659;
+  }
+}

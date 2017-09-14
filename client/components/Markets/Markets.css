@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+}
+
+.market {
+  flex: 1 200px;
+  min-width: 200px;
+  border: 1px dashed #007bff;
+  border-top: none;
+  border-left: none;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+{
+  /* Extends from AirBnB Configuration */
+  "extends": [
+    "eslint:recommended",
+    "fbjs-opensource",
+    "plugin:flowtype/recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+
+  /* Override Rules */
+  "rules": {
+    "react/prop-types": 0,
+    "no-duplicate-imports": 0
+  },
+
+  /* Linting Environment */
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true
+  },
+
+  /* Linting Parser */
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+
+  /* Linting Plugins */
+  "plugins": ["react", "flowtype"]
+}
