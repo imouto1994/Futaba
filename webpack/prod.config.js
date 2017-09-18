@@ -2,6 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 const babelConfig = require("../config/babel");
 
@@ -119,6 +120,12 @@ module.exports = {
     // Global variables definition
     new webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify("production"),
+    }),
+
+    // Favicon Plugin
+    new FaviconsWebpackPlugin({
+      // Your source logo
+      logo: path.resolve(__dirname, "../client/images/bitcoin-logo.png"),
     }),
 
     // Optimization Plugins
