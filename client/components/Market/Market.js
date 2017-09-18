@@ -166,7 +166,7 @@ class Market extends PureComponent<Props> {
         </span>
         <span className={statNumberClassname}>
           {ceil(stat, precision).toLocaleString("en-US", {
-            minimumFractionDigits: 0,
+            maximumFractionDigits: PRECISION,
           })}
           {targetCurrency && targetCurrency !== "BTC" && latestBitcoinPrice ? (
             ` - $${usdValue}`
