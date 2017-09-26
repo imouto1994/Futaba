@@ -73,7 +73,7 @@ class Market extends PureComponent<Props> {
         <div className={styles.imageContainer}>
           <a
             className={styles.imageLink}
-            target="__blank"
+            target="_blank"
             href={`https://bittrex.com/Market/Index?MarketName=${market.MarketName}`}
           >
             <img
@@ -93,16 +93,16 @@ class Market extends PureComponent<Props> {
           targetCurrency,
         )}
         {this.renderStat(
-          "Ask",
-          previousMarket.Ask,
-          market.Ask,
+          "Bid",
+          previousMarket.Bid,
+          market.Bid,
           sourceCurrency,
           targetCurrency,
         )}
         {this.renderStat(
-          "Bid",
-          previousMarket.Bid,
-          market.Bid,
+          "Ask",
+          previousMarket.Ask,
+          market.Ask,
           sourceCurrency,
           targetCurrency,
         )}
