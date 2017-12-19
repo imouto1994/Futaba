@@ -27,7 +27,7 @@ type Props = {
 
 const BASE_URL = "https://www.cryptocompare.com";
 const PRECISION = 8;
-const INTERVAL_DURATION = 60 * 1000;
+const INTERVAL_DURATION = 30 * 1000;
 
 class Market extends PureComponent<Props> {
   interval: number;
